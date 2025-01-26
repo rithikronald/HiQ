@@ -1,23 +1,14 @@
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, StyleSheet} from 'react-native';
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
-import {StyleSheet} from 'nativewind';
 
 export const Header = () => {
   return (
     <View className="flex flex-row h-24">
       <LinearGradient
-        style={{
-          flexDirection: 'row',
-          height: '100%',
-          width: '100%',
-          justifyContent: 'space-between',
-          alignItems: 'flex-end',
-          paddingHorizontal: 10,
-          paddingBottom: 15,
-        }}
+        style={styles.backgroundStyle}
         colors={['#048267', '#025947']}>
-        <Text className="text-white font-extrabold text-lg italic">
+        <Text className="text-white font-extrabold text-xl italic">
           APP NAME LOGO
         </Text>
         <View className="flex flex-row gap-x-2">
@@ -38,3 +29,15 @@ export const Header = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  backgroundStyle: {
+    flexDirection: 'row',
+    height: '100%',
+    width: '100%',
+    justifyContent: 'space-between',
+    alignItems: 'flex-end',
+    paddingHorizontal: 10,
+    paddingBottom: 15,
+  },
+});
