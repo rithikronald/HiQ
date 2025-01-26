@@ -70,6 +70,7 @@ export const ImageCarousel = () => {
         bounces={false}>
         {data.map((item, index) => (
           <View
+            key={item.id}
             style={[styles.card, currentIndex === index && styles.activeCard]}>
             <ImageBackground
               key={item.id}
@@ -81,22 +82,24 @@ export const ImageCarousel = () => {
                     International League T20
                   </Text>
                   <View className="bg-[#FF0000] w-[60px] rounded-md justify-center items-center">
-                    <Text className="text-white">Live</Text>
+                    <Text className="text-white text-sm">LIVE</Text>
                   </View>
                 </View>
                 <View className="flex flex-row justify-around w-full flex-1">
                   <TeamCard
+                    orientation="bottom"
                     url={require('../assets/India_national_cricket_team.png')}
                     teamName="IND"
                     textColor="#fff"
                   />
                   <View className="flex justify-center items-center">
-                    <Text className="text-sm font-extrabold text-white">
+                    <Text className="text-lg font-extrabold text-white">
                       30/0 (4)
                     </Text>
                     <Text className="text-xs text-white">ADKR to Bowl</Text>
                   </View>
                   <TeamCard
+                    orientation="bottom"
                     url={require('../assets/england-logo.png')}
                     teamName="ENG"
                     textColor="#fff"
