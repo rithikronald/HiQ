@@ -1,14 +1,13 @@
+import React, {useRef, useState} from 'react';
 import {
-  View,
-  Text,
+  Dimensions,
   ImageBackground,
   ScrollView,
-  Dimensions,
   StyleSheet,
+  Text,
+  View,
 } from 'react-native';
-import React, {useRef, useState} from 'react';
 import {TeamCard} from './TeamCard';
-import Carousel from 'react-native-reanimated-carousel';
 const screenWidth = Dimensions.get('window').width;
 const data = [
   {
@@ -128,53 +127,6 @@ const styles = StyleSheet.create({
     transform: [{scale: 1.05}],
     shadowColor: 'blue',
     shadowOpacity: 0.4,
-  },
-  leagueTitle: {
-    fontSize: 14,
-    fontWeight: 'bold',
-    color: 'white',
-    marginBottom: 5,
-  },
-  scoreRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  teamContainer: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  team: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: '#000',
-  },
-  scoreContainer: {
-    flex: 2,
-    alignItems: 'center',
-  },
-  score: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#000',
-  },
-  bowler: {
-    fontSize: 12,
-    color: '#555',
-  },
-  liveBadge: {
-    position: 'absolute',
-    top: 10,
-    right: 10,
-    backgroundColor: 'red',
-    borderRadius: 5,
-    paddingVertical: 2,
-    paddingHorizontal: 5,
-  },
-  liveText: {
-    fontSize: 12,
-    color: '#fff',
-    fontWeight: 'bold',
   },
 });
 
