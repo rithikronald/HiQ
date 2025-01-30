@@ -11,8 +11,10 @@ export const Badge = ({color, text, textColor}: BadgeProps) => {
   return (
     <View
       style={{backgroundColor: color}}
-      className="px-1  rounded-[4px] w-10 justify-center items-center">
-      <Text style={{color: textColor ? textColor : '#000'}} className="text-xs">
+      className="rounded-[4px] w-11 justify-center items-center">
+      <Text
+        style={{color: textColor ? textColor : '#000'}}
+        className="text-xs font-[500]">
         {text}
       </Text>
     </View>

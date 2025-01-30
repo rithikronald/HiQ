@@ -13,6 +13,15 @@ export const BottomTabNavigation = () => {
     <Tab.Navigator
       screenOptions={({route}): any => ({
         headerShown: false,
+        tabBarStyle: {
+          borderTopLeftRadius: 20,
+          borderTopRightRadius: 20,
+          height: 60,
+        },
+        tabBarLabelStyle: {
+          fontWeight: 'bold',
+          color: '#000',
+        },
         tabBarActiveTintColor: '#048267',
         tabBarIcon: ({
           focused,
@@ -33,7 +42,7 @@ export const BottomTabNavigation = () => {
           } else if (route.name === 'Images') {
             url = require('../assets/image.png');
           }
-          return <Image className="w-7 h-7" source={url} />;
+          return <Image className="w-6 h-6" source={url} />;
         },
       })}>
       <Tab.Screen name="Home" component={Home} />

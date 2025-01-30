@@ -76,13 +76,14 @@ export const ImageCarousel = () => {
               key={item.id}
               source={require('../assets/carousel.png')}
               style={{width: '100%', height: '100%'}}>
-              <View className="flex flex-1 p-3">
+              <View className="flex flex-1 p-3 px-4">
                 <View className="flex flex-row justify-between">
                   <Text className="text-white font-bold">
                     International League T20
                   </Text>
-                  <View className="bg-[#FF0000] w-[60px] rounded-md justify-center items-center">
-                    <Text className="text-white text-sm">LIVE</Text>
+                  <View className="bg-[#FF0000] w-[56px] h-4 flex flex-row rounded-md justify-center items-center">
+                    <View className="w-[5px] h-[5px] rounded-full bg-white" />
+                    <Text className="text-white text-xs ml-[4px]">LIVE</Text>
                   </View>
                 </View>
                 <View className="flex flex-row justify-around w-full flex-1">
@@ -93,10 +94,10 @@ export const ImageCarousel = () => {
                     textColor="#fff"
                   />
                   <View className="flex justify-center items-center">
-                    <Text className="text-lg font-extrabold text-white">
+                    <Text className="text-lg font-[700] text-white">
                       30/0 (4)
                     </Text>
-                    <Text className="text-xs text-white">ADKR to Bowl</Text>
+                    <Text className="text-sm text-white font-[500]">ADKR to Bowl</Text>
                   </View>
                   <TeamCard
                     orientation="bottom"

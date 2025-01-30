@@ -6,10 +6,7 @@ export const TopNavBar = () => {
     <View className="flex flex-row w-full h-12 bg-white rounded-lg">
       {['Live', 'Upcoming', 'Finised', 'Series']?.map((item, index) => {
         return (
-          <View
-            key={index}
-            style={{}}
-            className="flex flex-1 justify-center items-center">
+          <View key={index} className="flex flex-1 justify-center items-center">
             <Text>{item}</Text>
           </View>
         );

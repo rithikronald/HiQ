@@ -4,7 +4,7 @@ import LinearGradient from 'react-native-linear-gradient';
 
 export const Header = () => {
   return (
-    <View className="flex flex-row h-24">
+    <View className="flex flex-row h-20">
       <LinearGradient
         style={styles.backgroundStyle}
         colors={['#048267', '#025947']}>
@@ -12,10 +12,10 @@ export const Header = () => {
           APP NAME LOGO
         </Text>
         <View className="flex flex-row gap-x-2">
-          <View className="flex-row bg-white/30 p-2 rounded-full justify-center items-center">
+          <View className="flex-row bg-white/30 p-2 rounded-full justify-center items-center overflow-hidden">
             <Image
-              className="h-5 w-5 aspect-square"
-              source={require('../assets/user.png')}
+              className="h-5 w-5"
+              source={require('../assets/user1.png')}
             />
           </View>
           <View className="flex-row bg-white/30 p-2 rounded-full justify-center items-center">
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     width: '100%',
     justifyContent: 'space-between',
     alignItems: 'flex-end',
-    paddingHorizontal: 10,
+    paddingHorizontal: 14,
     paddingBottom: 15,
   },
 });

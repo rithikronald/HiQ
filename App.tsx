@@ -6,7 +6,7 @@ import {Routes} from './src/naivgation/Routes';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView className="flex flex-1">
+    <SafeAreaView className="flex flex-1 bg-primary/10">
       <Header />
       <Routes />
     </SafeAreaView>

@@ -21,7 +21,7 @@ export const TeamCard = ({
           <Image className="w-10 h-10 rounded-full" source={url} />
           <Text
             style={{color: textColor ? textColor : '#000'}}
-            className="text-xl font-bold ml-2">
+            className="text-xl font-[600] ml-2">
             {teamName}
           </Text>
         </View>
@@ -30,7 +30,7 @@ export const TeamCard = ({
         <View className="flex flex-row items-center">
           <Text
             style={{color: textColor ? textColor : '#000'}}
-            className="text-xl font-bold mr-2">
+            className="text-xl font-[600] mr-2">
             {teamName}
           </Text>
           <Image className="w-10 h-10 rounded-full" source={url} />
@@ -38,10 +38,10 @@ export const TeamCard = ({
       )}
       {orientation === 'bottom' && (
         <View className="flex flex-col items-center justify-center">
-          <Image className="w-9 h-9 rounded-full" source={url} />
+          <Image className="w-8 h-8 rounded-full" source={url} />
           <Text
             style={{color: textColor ? textColor : '#000'}}
-            className="text-xl font-semibold">
+            className="text-lg font-semibold">
             {teamName}
           </Text>
         </View>
