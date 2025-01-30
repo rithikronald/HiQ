@@ -2,7 +2,7 @@ export const data = [
   {
     id: 1,
     post: {
-      url: require('../Assets/video1.mov'),
+      url: require('../assets/Assets/video1.mov'),
     },
     user: {
       userId: 1,
@@ -17,7 +17,7 @@ export const data = [
   {
     id: 2,
     post: {
-      url: require('../Assets/video2.mov'),
+      url: require('../assets/Assets/video2.mov'),
     },
     user: {
       userId: 2,
@@ -32,7 +32,7 @@ export const data = [
   {
     id: 3,
     post: {
-      url: require('../Assets/video3.mov'),
+      url: require('../assets/Assets/video3.mov'),
     },
     user: {
       userId: 3,
@@ -47,7 +47,7 @@ export const data = [
   {
     id: 4,
     post: {
-      url: require('../Assets/video4.mov'),
+      url: require('../assets/Assets/video4.mov'),
     },
     user: {
       userId: 4,
@@ -62,7 +62,7 @@ export const data = [
   {
     id: 5,
     post: {
-      url: require('../Assets/video5.mov'),
+      url: require('../assets/Assets/video5.mov'),
     },
     user: {
       userId: 5,
