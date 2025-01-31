@@ -20,28 +20,19 @@ export const SingleReel = ({item, index, currentIndex}) => {
   }, [item]);
 
   return (
-    <View style={{width: width, height: height,position:"relative"}}>
-      <TouchableOpacity
+    <View style={{width: width, height: height}}>
+      <Video
+        ref={videoRef}
+        onBuffer={onBuffer}
+        onError={onError}
+        repeat={true}
+        resizeMode="cover"
+        paused={false}
+        source={item.post.url}
         style={{
-          width: '100%',
-          height: '100%',
-          position: 'absolute',
-        }}>
-        <Video
-          ref={videoRef}
-          onBuffer={onBuffer}
-          onError={onError}
-          repeat={true}
-          resizeMode="cover"
-          paused={false}
-          source={item.post.url}
-          style={{
-            width: '100%',
-            height: '100%',
-            position: 'absolute',
-          }}
-        />
-      </TouchableOpacity>
+            flex:1
+        }}
+      />
     </View>
   );
 };
